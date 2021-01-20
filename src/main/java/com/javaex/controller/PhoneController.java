@@ -34,7 +34,7 @@ public class PhoneController {
 		//model --> data 를 보내는 방법 --> 담아 놓으면 된다.
 		model.addAttribute("pList", personList);
 		
-		return "/WEB-INF/views/list.jsp";
+		return "list";
 	}
 	
 	
@@ -45,7 +45,7 @@ public class PhoneController {
 		System.out.println("등록폼");
 		
 		
-		return "/WEB-INF/views/writeForm.jsp";
+		return "writeForm";
 	}
 	
 	//등록
@@ -82,7 +82,7 @@ public class PhoneController {
 		System.out.println(personVo.toString());
 		
 		
-		return "/WEB-INF/views/modifyForm.jsp";
+		return "modifyForm";
 		
 		
 	}
