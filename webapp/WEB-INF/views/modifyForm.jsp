@@ -18,11 +18,10 @@
 	</p>
 	
 	<form action="./update.jsp" method="get">
-		이름(name): <input type="text" name="name"> <br>
-		핸드폰(hp): <input type="text" name="hp"> <br>
-		회사(company): <input type="text" name="company"> <br>
-		
-		코드(id) 히든으로 처리: <input type="text" name="id" value="${personVo.personId}"><br>
+		이름(name): <input type="text" name="name" value="${personVo.name }"><br>
+		핸드폰(hp): <input type="text" name="hp" value="${personVo.hp}"> <br>
+		회사(company): <input type="text" name="company" value="${personVo.company}"> <br>
+		코드(id) 히든으로 처리: <input type="text" name="personId" value="${personVo.personId}"><br>
 		
 		<button type="submit">수정</button>
 		
